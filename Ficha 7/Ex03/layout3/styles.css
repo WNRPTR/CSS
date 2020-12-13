@@ -5,43 +5,43 @@ body {
     font-size: 18px;
     font-weight: bold;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
-#main {
-    display: flex;
-    flex-grow: 1;
-}
-
-#main>article {
-    flex: 1;
-    order: 1;
-    display: flex;
-    align-items: stretch;
-}
-
-#main>nav,
-#main>aside {
-    flex-basis: 20vw;
-}
-
-#main>nav {
+.outer-col-1 {
     background: lightgray;
-    order: -1;
-    display: flex;
-    align-items: stretch;
+    flex: 1;
 }
 
-#main>aside {
-    background: lightgreen;
-    order: 2;
+.outer-col-2 {
     display: flex;
-    align-items: stretch;
+    flex-direction: column;
+    flex: 5;
+}
+
+.inner-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.inner-col {
+    flex: 5;
+}
+
+.inner-row article {
+    flex: 3;
+    min-height: 60vh;
+}
+
+.inner-row aside {
+    background: lightgreen;
+    flex: 1;
 }
 
 header,
 footer {
     background: lightblue;
+    height: 20vh;
 }
 
 header,
