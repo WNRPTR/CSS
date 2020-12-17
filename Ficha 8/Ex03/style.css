@@ -1,0 +1,71 @@
+.container {
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.box {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background: red;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 100px 25px;
+    font-size: 5em;
+    text-align: center;
+    line-height: 150px;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    vertical-align: top;
+}
+
+.box-1 {
+    transition-property: background-color;
+    transition-duration: 2;
+    transition-timing-function: linear;
+    transition-delay: 0.5;
+}
+
+.box-1:hover {
+    background-color: purple;
+}
+
+.box-2 {
+    transition-property: color;
+    transition-duration: 3;
+    transition-timing-function: linear;
+    transition-delay: 0.5; 
+}
+
+.box-2:hover {
+    color: black;
+}
+
+.box-3 {
+    transition-property: width;
+    transition-duration: 0.5;
+    transition-timing-function: linear;
+    transition-delay: 3;
+}
+
+.box-3:hover {
+    width: 200px;
+}
+
+.box-4 {
+    transition-property: height;
+    transition-duration: 0.5;
+    transition-property: width;
+    transition-duration: 0.5;
+    
+    
+}
+
+.box-4:hover {
+    width: 250px;
+    height: 300px;
+    line-height: 300px;
+    transform: rotate(315deg);
+}
