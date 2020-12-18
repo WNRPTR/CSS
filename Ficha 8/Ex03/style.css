@@ -22,10 +22,7 @@
 }
 
 .box-1 {
-    transition-property: background-color;
-    transition-duration: 2;
-    transition-timing-function: linear;
-    transition-delay: 0.5;
+    transition: background-color 2s linear 0.5s;
 }
 
 .box-1:hover {
@@ -33,10 +30,7 @@
 }
 
 .box-2 {
-    transition-property: color;
-    transition-duration: 3;
-    transition-timing-function: linear;
-    transition-delay: 0.5; 
+    transition: color 3s ease 0.5s;
 }
 
 .box-2:hover {
@@ -44,10 +38,7 @@
 }
 
 .box-3 {
-    transition-property: width;
-    transition-duration: 0.5;
-    transition-timing-function: linear;
-    transition-delay: 3;
+    transition: width 0.5s ease 3s;
 }
 
 .box-3:hover {
@@ -55,12 +46,7 @@
 }
 
 .box-4 {
-    transition-property: height;
-    transition-duration: 0.5;
-    transition-property: width;
-    transition-duration: 0.5;
-    
-    
+    transition: width 0.5s, height 5s;
 }
 
 .box-4:hover {
